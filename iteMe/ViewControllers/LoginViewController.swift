@@ -40,16 +40,16 @@ class LoginViewController: UIViewController {
                 self.errorLbl.alpha = 1
             }
             else {
-                self.signIn()
+                self.login()
             }
         }
     }
     
     
-    func signIn() {
-        let homePageViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomePageViewController) as? HomePageViewController
+    func login() {
+        let mainTabBarController = storyboard?.instantiateViewController(identifier: "MainTabBarController")
         
-        view.window?.rootViewController = homePageViewController
+        view.window?.rootViewController = mainTabBarController
         view.window?.makeKeyAndVisible()
     }
     

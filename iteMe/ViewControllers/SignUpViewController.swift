@@ -89,9 +89,14 @@ class SignUpViewController: UIViewController {
     
     func transitionToHomePage() {
         
-        let homePageViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomePageViewController) as? HomePageViewController
+//        let homePageViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomePageViewController) as? HomePageViewController
+//
+//        view.window?.rootViewController = homePageViewController
+//        view.window?.makeKeyAndVisible()
         
-        view.window?.rootViewController = homePageViewController
+        let mainTabBarController = storyboard?.instantiateViewController(identifier: "MainTabBarController")
+        
+        view.window?.rootViewController = mainTabBarController
         view.window?.makeKeyAndVisible()
     }
     
