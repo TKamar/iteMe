@@ -9,21 +9,27 @@ import UIKit
 
 class StoreViewController: UIViewController {
 
+    @IBOutlet weak var storeIMG: UIImageView!
+    @IBOutlet weak var storeText: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        storeIMG.image = AllStoresViewController.images[AllStoresViewController.myIndex]
+        storeText.text = getItems(store: AllStoresViewController.storesItems[AllStoresViewController.myIndex])
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func getItems(store: [String]) -> String {
+        var str = ""
+        for item in store {
+            str += item + "\n"
+        }
+        return str
     }
-    */
+
 
 }

@@ -232,6 +232,57 @@
             </objects>
             <point key="canvasLocation" x="-1128" y="838"/>
         </scene>
+        <!--Store View Controller-->
+        <scene sceneID="7f4-GA-dxB">
+            <objects>
+                <viewController id="F1a-VK-I7T" customClass="StoreViewController" customModule="iteMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMh-e7-9yb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="2dV-GA-k3L">
+                                <rect key="frame" x="40" y="128" width="334" height="98"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TFN-pY-WrO">
+                                <rect key="frame" x="20" y="471" width="374" height="327"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Walmart" translatesAutoresizingMaskIntoConstraints="NO" id="pGw-If-Nbo">
+                                <rect key="frame" x="20" y="251" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7by-pD-caM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nPJ-bb-jr4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nPJ-bb-jr4" firstAttribute="trailing" secondItem="pGw-If-Nbo" secondAttribute="trailing" constant="20" id="1o9-wF-bIQ"/>
+                            <constraint firstItem="2dV-GA-k3L" firstAttribute="leading" secondItem="nPJ-bb-jr4" secondAttribute="leading" constant="40" id="7tU-Im-Vax"/>
+                            <constraint firstItem="2dV-GA-k3L" firstAttribute="top" secondItem="nPJ-bb-jr4" secondAttribute="top" constant="40" id="AQC-z1-CfZ"/>
+                            <constraint firstItem="TFN-pY-WrO" firstAttribute="leading" secondItem="nPJ-bb-jr4" secondAttribute="leading" constant="20" id="F7M-d7-2YI"/>
+                            <constraint firstItem="pGw-If-Nbo" firstAttribute="top" secondItem="2dV-GA-k3L" secondAttribute="bottom" constant="25" id="G5B-RX-39h"/>
+                            <constraint firstItem="pGw-If-Nbo" firstAttribute="leading" secondItem="nPJ-bb-jr4" secondAttribute="leading" constant="20" id="QGH-Qo-sSV"/>
+                            <constraint firstItem="nPJ-bb-jr4" firstAttribute="bottom" secondItem="TFN-pY-WrO" secondAttribute="bottom" constant="15" id="d1D-3A-mOj"/>
+                            <constraint firstItem="TFN-pY-WrO" firstAttribute="top" secondItem="pGw-If-Nbo" secondAttribute="bottom" constant="20" id="jYc-20-5zQ"/>
+                            <constraint firstItem="nPJ-bb-jr4" firstAttribute="trailing" secondItem="2dV-GA-k3L" secondAttribute="trailing" constant="40" id="okq-ej-7W7"/>
+                            <constraint firstItem="nPJ-bb-jr4" firstAttribute="trailing" secondItem="TFN-pY-WrO" secondAttribute="trailing" constant="20" id="u0b-xz-1k2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gcA-c8-njT"/>
+                    <connections>
+                        <outlet property="storeIMG" destination="pGw-If-Nbo" id="gsg-zn-SI8"/>
+                        <outlet property="storeText" destination="TFN-pY-WrO" id="zhY-MN-P8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sx1-1J-biu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220.28985507246378" y="1550.8928571428571"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ubi-ag-9Kh">
             <objects>
@@ -243,7 +294,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ENH-Dn-Id3" kind="relationship" relationship="viewControllers" id="agY-Ae-rRy"/>
-                        <segue destination="EOo-Dk-BAw" kind="relationship" relationship="viewControllers" id="blH-Ed-9vY"/>
+                        <segue destination="uOo-73-OrU" kind="relationship" relationship="viewControllers" id="blH-Ed-9vY"/>
                         <segue destination="wnK-jq-5zM" kind="relationship" relationship="viewControllers" id="hix-ob-cCz"/>
                     </connections>
                 </tabBarController>
@@ -333,7 +384,7 @@
             </objects>
             <point key="canvasLocation" x="-2620" y="1551"/>
         </scene>
-        <!--Stores-->
+        <!--All Stores View Controller-->
         <scene sceneID="OfB-nn-RI9">
             <objects>
                 <viewController storyboardIdentifier="allStoresViewController" id="EOo-Dk-BAw" customClass="AllStoresViewController" customModule="iteMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -342,10 +393,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allStores" translatesAutoresizingMaskIntoConstraints="NO" id="Ddo-kT-CjJ">
-                                <rect key="frame" x="40" y="84" width="334" height="101"/>
+                                <rect key="frame" x="40" y="128" width="334" height="101"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q3p-2e-KuM">
-                                <rect key="frame" x="5" y="215" width="404" height="578"/>
+                                <rect key="frame" x="5" y="259" width="404" height="534"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -361,41 +412,15 @@
                             <constraint firstItem="Q3p-2e-KuM" firstAttribute="leading" secondItem="r6m-wJ-Xb1" secondAttribute="leading" constant="5" id="xgj-zB-EJD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stores" image="storeBar" selectedImage="storeBar" id="mUW-Z3-5IU"/>
+                    <navigationItem key="navigationItem" id="Cjr-EO-3SZ"/>
                     <connections>
                         <outlet property="storesView" destination="Q3p-2e-KuM" id="tWT-we-FmC"/>
-                        <segue destination="txX-IN-Q5m" kind="show" id="FoB-xi-nn2"/>
+                        <segue destination="F1a-VK-I7T" kind="show" identifier="allStoresViewController" id="7zs-GA-jBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62C-6U-ya8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1842.0289855072465" y="1550.8928571428571"/>
-        </scene>
-        <!--Store View Controller-->
-        <scene sceneID="Eej-Zc-vck">
-            <objects>
-                <viewController id="txX-IN-Q5m" customClass="StoreViewController" customModule="iteMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ArZ-VN-Vlz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="9fa-hh-e58">
-                                <rect key="frame" x="40" y="84" width="334" height="98"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="QpB-OT-SVV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="9fa-hh-e58" firstAttribute="leading" secondItem="QpB-OT-SVV" secondAttribute="leading" constant="40" id="678-xv-OtP"/>
-                            <constraint firstItem="QpB-OT-SVV" firstAttribute="trailing" secondItem="9fa-hh-e58" secondAttribute="trailing" constant="40" id="7i6-rk-t9q"/>
-                            <constraint firstItem="9fa-hh-e58" firstAttribute="top" secondItem="QpB-OT-SVV" secondAttribute="top" constant="40" id="MsK-jI-P3f"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="cbj-Ac-pmj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GlP-qs-0aY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1129" y="1551"/>
+            <point key="canvasLocation" x="-931.88405797101461" y="1550.8928571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YBl-ZW-5Qo">
@@ -414,8 +439,28 @@
             </objects>
             <point key="canvasLocation" x="-2388" y="108"/>
         </scene>
+        <!--Stores-->
+        <scene sceneID="DLQ-lP-Tid">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uOo-73-OrU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Stores" image="storeBar" selectedImage="storeBar" id="mUW-Z3-5IU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ISQ-41-TfQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EOo-Dk-BAw" kind="relationship" relationship="rootViewController" id="QiR-1W-LHR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJs-yc-Huc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1842.0289855072465" y="1550.8928571428571"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Walmart" width="800" height="667"/>
         <image name="allStores" width="394" height="101"/>
         <image name="frontpage" width="390" height="280"/>
         <image name="homeBar" width="24" height="24"/>
