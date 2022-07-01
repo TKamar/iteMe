@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10E1D84286F058100C69F51 /* StoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E1D82286F058100C69F51 /* StoresTableViewCell.swift */; };
+		C10E1D85286F058100C69F51 /* StoresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10E1D83286F058100C69F51 /* StoresTableViewCell.xib */; };
+		C10E1D87286F12DA00C69F51 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E1D86286F12DA00C69F51 /* StoreViewController.swift */; };
 		C132ED452869BA6400E07CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132ED442869BA6400E07CE6 /* AppDelegate.swift */; };
 		C132ED472869BA6400E07CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132ED462869BA6400E07CE6 /* SceneDelegate.swift */; };
 		C132ED492869BA6400E07CE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132ED482869BA6400E07CE6 /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		75E2FC576F9402A28DD8A930 /* Pods-iteMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iteMe.release.xcconfig"; path = "Target Support Files/Pods-iteMe/Pods-iteMe.release.xcconfig"; sourceTree = "<group>"; };
+		C10E1D82286F058100C69F51 /* StoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewCell.swift; sourceTree = "<group>"; };
+		C10E1D83286F058100C69F51 /* StoresTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoresTableViewCell.xib; sourceTree = "<group>"; };
+		C10E1D86286F12DA00C69F51 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		C132ED412869BA6400E07CE6 /* iteMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iteMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C132ED442869BA6400E07CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C132ED462869BA6400E07CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			children = (
 				C1AB5B742869F1F5002949D5 /* Utilities.swift */,
 				C1AB5B77286A04A7002949D5 /* Constants.swift */,
+				C10E1D82286F058100C69F51 /* StoresTableViewCell.swift */,
+				C10E1D83286F058100C69F51 /* StoresTableViewCell.xib */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 				C1C285DA2869D81F0086F1DA /* HomePageViewController.swift */,
 				C1FD3F39286B1DEF0061DA52 /* SearchViewController.swift */,
 				C1FD3F3B286B1E000061DA52 /* AllStoresViewController.swift */,
+				C10E1D86286F12DA00C69F51 /* StoreViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C132ED512869BA6500E07CE6 /* LaunchScreen.storyboard in Resources */,
+				C10E1D85286F058100C69F51 /* StoresTableViewCell.xib in Resources */,
 				C132ED592869CAE100E07CE6 /* GoogleService-Info.plist in Resources */,
 				C132ED4E2869BA6500E07CE6 /* Assets.xcassets in Resources */,
 				C132ED4C2869BA6400E07CE6 /* Main.storyboard in Resources */,
@@ -247,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10E1D84286F058100C69F51 /* StoresTableViewCell.swift in Sources */,
 				C1FD3F3C286B1E000061DA52 /* AllStoresViewController.swift in Sources */,
 				C132ED492869BA6400E07CE6 /* ViewController.swift in Sources */,
 				C132ED452869BA6400E07CE6 /* AppDelegate.swift in Sources */,
@@ -254,6 +265,7 @@
 				C1FD3F3A286B1DEF0061DA52 /* SearchViewController.swift in Sources */,
 				C1C285DB2869D81F0086F1DA /* HomePageViewController.swift in Sources */,
 				C1C285D72869D7E20086F1DA /* SignUpViewController.swift in Sources */,
+				C10E1D87286F12DA00C69F51 /* StoreViewController.swift in Sources */,
 				C1C285D92869D7FB0086F1DA /* LoginViewController.swift in Sources */,
 				C132ED472869BA6400E07CE6 /* SceneDelegate.swift in Sources */,
 				C1AB5B78286A04A7002949D5 /* Constants.swift in Sources */,
