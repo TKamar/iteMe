@@ -7,7 +7,10 @@ class AllStoresViewController: UIViewController, UITableViewDelegate, UITableVie
     static var myIndex = 0
     static var stores = ["Walmart", "nike", "officeDepot", "colombia"]
     static var images = [UIImage(named: "Walmart"),UIImage(named: "nike"),UIImage(named: "officeDepot"),UIImage(named: "colombia")]
-    static var storesItems = [["Walmart1", "Walmart2"], ["Nike1", "Nike2", "Nike3"], [], []]
+//    static var storesItems = [["Walmart1", "Walmart2"], ["Nike1", "Nike2", "Nike3"], [], []]
+//    static var storesItems = ["Walmart1", "Walmart2" ,"Nike1", "Nike2", "Nike3"]
+    static var storesItems = ["1": ["Walmart1", "Walmart2"], "2": ["Nike1", "Nike2", "Nike3"], "3": [],"4": []]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
