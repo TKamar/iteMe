@@ -121,7 +121,7 @@
                                             <action selector="signUpTapped:" destination="LBa-de-5or" eventType="touchUpInside" id="NYO-qk-dYk"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-kQ-Ff6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-kQ-Ff6">
                                         <rect key="frame" x="0.0" y="350" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncw-6T-ZQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1880" y="838"/>
+            <point key="canvasLocation" x="-1881.1594202898552" y="837.72321428571422"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kSW-ub-yzJ">
@@ -481,7 +481,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DuT-ET-faS"/>
+        <segue reference="7zs-GA-jBA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Walmart" width="800" height="667"/>
