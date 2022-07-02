@@ -15,13 +15,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let item1 = ItemsData(sName: "Walmart", sItem: ["Walmart1", "Walmart2"])
+       
+        let item1 = ItemsData(sName: "Walmart", sItem: ["Key", "Glue", "Bike", "Shaver", "iPhone", "Airpods", "Shoes", "Nike Shoes", "Adidas Shoes", "Blunstone Shoes"])
         listItems .append(item1)
-        let item2 = ItemsData(sName: "nike", sItem: ["Nike1", "Nike2", "Nike3"])
+        let item2 = ItemsData(sName: "nike", sItem: ["Shoes", "Nike Shoes", "Adidas Shoes", "Blunstone Shoes"])
         listItems.append(item2)
-        let item3 = ItemsData(sName: "officeDepot", sItem: [])
+        let item3 = ItemsData(sName: "officeDepot", sItem: ["Pencil", "Eraser", "Pen", "Pencil Case", "Pages A4"])
         listItems.append(item3)
+        let item4 = ItemsData(sName: "colombia", sItem: ["Coat", "Mountain Shoes", "Hiking Pants", "Shirt"])
+        listItems.append(item4)
         
         initSearchTableView()
         initSearchController()

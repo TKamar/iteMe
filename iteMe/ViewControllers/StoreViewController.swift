@@ -26,7 +26,7 @@ class StoreViewController: UIViewController {
     func getItems(store: [String]) -> String {
         var str = ""
         for item in store {
-            str += item + "\n"
+            str += "· \(item) \n"
         }
         return str
     }
